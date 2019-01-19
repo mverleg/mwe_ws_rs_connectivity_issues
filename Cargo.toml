@@ -1,0 +1,16 @@
+[package]
+name = "debug"
+version = "0.1.0"
+authors = ["Mark <mverleg.noreply@gmail.com>"]
+#edition = "2018"
+
+[[bin]]
+name = "debug"
+path = "rs_ws_ssl_server_client.rs"
+
+[dependencies]
+log = { version = "0.4.6" }
+env_logger = { version = "0.5.13" }
+ws = { version = "0.7.9", features = ["ssl"] }
+openssl = { version = "0.10.15" }
+url = { version = "1.7.2" }
